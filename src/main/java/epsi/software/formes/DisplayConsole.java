@@ -4,14 +4,10 @@ import epsi.software.formes.models.Line;
 import epsi.software.formes.models.Square;
 import epsi.software.formes.models.Triangle;
 
-/**
- * Cette classe contient la seule méthode main du projet
- * Elle affiche une suite de formes
- */
 public class DisplayConsole {
     public static void main(String[] args) {
         var delimiter = "=".repeat(25);
-//      Affichage des Lignes
+
         System.out.println(delimiter+"LIGNE"+delimiter);
         Line line5a = new Line();
         Line line5b = new Line();
@@ -29,7 +25,6 @@ public class DisplayConsole {
         line8b.display();
         System.out.println("");
 
-//      Affichage des Carrés
         System.out.println(delimiter+"CARRE"+delimiter);
         Square square7a = new Square(7);
         Square square7b = new Square(7);
@@ -43,7 +38,7 @@ public class DisplayConsole {
         System.out.println("");
         square7d.display();
         System.out.println("");
-//      Affichage des Triangle
+
         System.out.println(delimiter+"TRIANGLE"+delimiter);
         Triangle triangle5a = new Triangle();
         Triangle triangle5b = new Triangle();
@@ -55,7 +50,5 @@ public class DisplayConsole {
         Triangle triangle6b = new Triangle(6);
         triangle6a.display();
         triangle6b.display();
-
-
     }
 }
